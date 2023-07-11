@@ -8,13 +8,14 @@ This project is a simple "Hello, World!" macOS application built using Objective
 
 ## Building the Project
 
-Open Terminal and navigate to the root directory of the project.
+1. Open Terminal and navigate to the root directory of the project.
 
- ```sh
+ 2. ```sh
 	mkdir build && cd build
 	cmake ..
 	cmake --build .
-	```
+	```sh
+
 ## Running the Project
 
 Launch the project using:
