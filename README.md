@@ -14,7 +14,7 @@ This project is a simple "Hello, World!" macOS application built using Objective
 	mkdir build && cd build
 	cmake ..
 	cmake --build .
-	```sh
+	```
 
 ## Running the Project
 
