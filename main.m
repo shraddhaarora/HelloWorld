@@ -18,6 +18,8 @@
 - (instancetype)init {
     label = [[NSTextField alloc] initWithFrame:NSMakeRect(5, 100, 290, 100)];
     [label setStringValue:@"Hello, World!"];
+    NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(100, 150, 50, 25)];
+    [button setTitle:@"Button"];
     self = [super
                initWithContentRect: NSMakeRect(0, 0, 300, 300)
                          styleMask:NSWindowStyleMaskTitled
@@ -27,6 +29,7 @@
                              defer:NO ];
     [self setTitle:@"Hello world"];
     [[self contentView] addSubview:label];
+    [[self contentView] addSubview:button];
     [self center];
     [self setIsVisible:YES];
     return self;
