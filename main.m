@@ -43,6 +43,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        NSWorkspace * ws = [NSWorkspace sharedWorkspace];
+        BOOL wasLaunched = [ws launchApplication:@"Finder"];
         [NSApplication sharedApplication];
         [[[Window alloc] init] makeMainWindow];
         [NSApp run];
